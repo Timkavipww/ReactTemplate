@@ -9,4 +9,6 @@ VITE_SITE_URL в .env
 
 # npm
 
-npm i axios react-router react-helmet-async zustand tailwindcss @tailwindcss/vite @tanstack/react-query react-hook-form zod lucide-react @tanstack/react-query-devtools
+npm i axios react-router react-helmet-async zustand @tanstack/react-query react-hook-form zod lucide-react @hookform/resolvers sonner
+
+npm i -D tailwindcss @tailwindcss/vite @tanstack/react-query-devtools vitest eslint prettier

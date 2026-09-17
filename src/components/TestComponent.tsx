@@ -1,3 +1,5 @@
+import { toast } from "sonner";
+
 export default function TestComponent() {
   return (
     <section className="mx-auto max-w-4xl px-6 py-20 lg:px-8">
@@ -20,6 +22,7 @@ export default function TestComponent() {
         <div className="mt-8 flex flex-wrap gap-3">
           <button
             type="button"
+            onClick={() => {console.log(import.meta.env.VITE_API_URL)}}
             className="rounded-lg bg-white px-5 py-2.5 text-sm font-medium text-black transition hover:bg-white/90 active:scale-[0.98]"
           >
             Тестовая кнопка
@@ -27,6 +30,7 @@ export default function TestComponent() {
 
           <button
             type="button"
+            onClick={() => {toast.success("Сохранено");}}
             className="rounded-lg border border-white/[0.1] bg-white/[0.03] px-5 py-2.5 text-sm font-medium text-white/80 transition hover:bg-white/[0.07] hover:text-white active:scale-[0.98]"
           >
             Вторичная кнопка
